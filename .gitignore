@@ -1,0 +1,5 @@
+.DS_Store
+dist/css/*
+dist/js/*
+lib/
+node_modules/

@@ -1,0 +1,37 @@
+/*
+Theme Name: Component Library
+Author: Caleb Szydlo
+Author URI: calebszydlo.com
+Text Domain:
+*/
+
+// normalize
+@import 'global/_normalize';
+@import 'global/_breakpoints';
+// @import 'global/_functions';
+// @import 'global/_grid';
+
+@import 'bourbon';
+@import 'neat';
+
+// theme settings
+@import 'theme/_fonts';
+@import 'theme/_colors';
+@import 'theme/_style-guide';
+
+// components
+@import 'components/_header';
+@import 'components/_mobile-navigation';
+@import 'components/_footer';
+@import 'components/_panel';
+@import 'components/_hero';
+@import 'components/_button';
+@import 'components/_form';
+@import 'components/_wordpress';
+
+// utilities
+@import 'utilities/_margin';
+@import 'utilities/_padding';
+@import 'utilities/_text';
+@import 'utilities/_background';
+@import 'utilities/_display';
