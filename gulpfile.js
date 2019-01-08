@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     autoprefixer = require('gulp-autoprefixer'),
     bourbon = require('bourbon').includePaths,
-    neat = require('bourbon-neat').includePaths;
+    gridzilla = require('gridzilla');
 
 // source files
 var input_sass_style = './src/stylesheets/style.scss',
@@ -26,7 +26,8 @@ gulp.task('sass', function() {
     .pipe(sass({
       sourceComments: 'map',
       sourceMap: 'sass',
-      includePaths: [bourbon, neat],
+      includePaths: [bourbon],
+      importer: gridzilla,
       outputStyle: 'nested'
     })
     .on('error', sass.logError))

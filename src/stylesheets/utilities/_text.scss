@@ -9,7 +9,14 @@
 
 /* Colors */
 
-.u-textColorWhite {}
+.u-textColorWhite { color: $color-white; }
+.u-textColorBlack { color: $color-black; }
+.u-textColorPrimaryShade { color: $color-primary-shade; }
+.u-textColorPrimary { color: $color-primary; }
+.u-textColorPrimaryTint { color: $color-primary-tint; }
+.u-textColorSecondary { color: $color-secondary; }
+.u-textColorNeutral { color: $color-neutral; }
+.u-textColorNeutralTint { color: $color-neutral-tint; }
 
 /**
  * Kerning
@@ -30,8 +37,8 @@
  */
 
 .u-textHeightTight { line-height: $font-base; }
-.u-textHeightDefault { line-height: calc($font-base * 1.33em); }
-.u-textHeightLoose { line-height: calc($font-base * 1.5em); }
+.u-textHeightDefault { line-height: calc($font-base * 1.33); }
+.u-textHeightLoose { line-height: calc($font-base * 1.5); }
 
 /**
  * Sizes
@@ -68,6 +75,15 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/**
+ * Aligns
+ */
+
+.u-textAlignLeft { text-align: left; }
+.u-textAlignCenter { text-align: center; }
+.u-textAlignRight { text-align: right; }
+.u-textAlignJustify { text-align: justify; }
 
 /**
  * Transforms

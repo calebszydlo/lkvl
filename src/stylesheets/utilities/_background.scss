@@ -9,7 +9,14 @@
 
 /* Standard Colors */
 
-.u-bgColorWhite {}
+.u-bgColorWhite { background-color: $color-white; }
+.u-bgColorBlack { background-color: $color-black; }
+.u-bgColorPrimaryShade { background-color: $color-primary-shade; }
+.u-bgColorPrimary { background-color: $color-primary; }
+.u-bgColorPrimaryTint { background-color: $color-primary-tint; }
+.u-bgColorSecondary { background-color: $color-secondary; }
+.u-bgColorNeutral { background-color: $color-neutral; }
+.u-bgColorNeutralTint { background-color: $color-neutral-tint; }
 
 /**
  * Background Positioning

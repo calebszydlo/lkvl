@@ -52,7 +52,7 @@ date_default_timezone_set('America/Chicago');
 $logo_svg = get_field('vector_logo', 'options');
 $logo = get_field('fallback_logo', 'options');
 
-$primary_nav =
+$nav_primary =
 	wp_nav_menu(
 		array(
 			'theme_location'	=> 'global',
@@ -64,36 +64,26 @@ $primary_nav =
 		)
 	);
 
+$nav_mobile_menu = $nav_primary;
 ?>
 
-<header role="banner" class="row--header row bg-black">
-	<div class="row--truncated">
-		<div class="row__cell row__cell--span12">
-			<a class="logo" href="<?php bloginfo('url'); ?>">
-				<img src="<?php echo $logo_svg['url']; ?>" onerror="this.onerror=null;this.src='<?php echo $logo['url']; ?>'" alt="<?php echo $logo['alt']; ?>" />
-			</a>
-			<nav role="navigation" class="global-nav mobile-hide">
-				<?php echo $primary_nav; ?>
-			</nav>
-			<div class="mobile-only mobile-nav--trigger">
-				<a href="#mobileNav">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="text">Menu</span>
-				</a>
-			</div>
-		</div><!--.span8-->
-	</div><!--.row truncated-->
-</header><!--.row-->
+<header role='banner' class='panel u-bgColorBlack'>
+	<div class="container-xl">
+		<div class="grid align-middle-xs nowrap-xs">
+			<div class="unit-xs-1-2 fit-content-xs">
+				<?php get_template_part( 'components/component', 'logo'); ?>
+			</div><!--.unit-sm-3-->
+			<div class="unit-xs-1-2">
+				<?php include( locate_template( 'components/component-nav_primary.php', false, false ) ); ?>
+				<?php get_template_part( 'components/component', 'hamburger'); ?>
+			</div><!--.unit-sm-9-->
+		</div><!--.grid-->
+	</div><!--.container-lg-->
+</header><!--.panel-->
 
-<section id="mobileNav" class="row row--mobile-nav mobile-only bg-black">
-	<div class="row--truncated">
-		<div class="row__cell row__cell--span12">
-			<nav class="global-nav--mobile">
-				<?php
-					echo $primary_nav;
-				?>
-			</nav>
-		</div><!--.mobile-nav-->
-	</div><!--.row truncated-->
-</section><!--.row-->
+
+<?php
+	// mobile navigation
+	$nav_mobile_container_classes = ' u-bgColorWhite';
+	include( locate_template( 'components/component-nav_mobile.php', false, false ) );
+?>

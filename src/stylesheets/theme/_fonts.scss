@@ -5,7 +5,19 @@ $font-weight-bold:    700;
 $font-weight-normal:  400;
 $font-weight-light:   200;
 
+$font-stack-primary: 'Open-sans', Arial, sans-serif;
+$font-stack-secondary: 'Lost-angeles', 'Open-sans', Arial, sans-serif;
+$font-stack-tertiary: $font-stack-primary;
 
+// font family declarations
+$font-family-primary:      $font-stack-primary;
+$font-family-secondary:    $font-stack-secondary;
+$font-family-tertiary:     $font-stack-tertiary;
+
+$font-base: 16px;
+$font-scale-factor: 3px;
+
+// open sans
 @font-face {
   font-family: 'Open-sans';
   src: url('../../lib/fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
@@ -52,4 +64,14 @@ $font-weight-light:   200;
        url('../../lib/fonts/open-sans/opensans-extrabolditalic-webfont.woff') format('woff');
   font-weight: $font-weight-bold;
   font-style: italic;
+}
+
+// Lost Angeles
+
+@font-face {
+  font-family: 'Lost-angeles';
+  src: url('lostangeles-italic-webfont.woff2') format('woff2'),
+       url('lostangeles-italic-webfont.woff') format('woff');
+  font-weight: $font-weight-normal;
+  font-style: normal;
 }
