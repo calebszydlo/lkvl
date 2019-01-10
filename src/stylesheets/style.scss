@@ -9,10 +9,12 @@ Text Domain:
 @import 'global/_normalize';
 @import 'global/_breakpoints';
 @import 'global/_functions';
+@import 'global/_mixins';
+@import 'global/_grid-flex';
 // @import 'global/_grid';
 
 @import 'bourbon';
-@import 'gridzilla';
+//@import 'gridzilla';
 
 // theme settings
 @import 'theme/_fonts';

@@ -1,0 +1,12 @@
+/* _mixins.scss */
+
+// create a media query
+@mixin create-mq($breakpoint) {
+  @if ($breakpoint == 0) {
+    @content;
+  } @else {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

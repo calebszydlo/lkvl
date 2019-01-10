@@ -1,0 +1,96 @@
+/* _grid.scss */
+
+// define vars
+$grid-gutter: 1.5625%;
+$grid-columns: 12;
+
+// define mixins
+
+@mixin create-col-classes($modifier, $grid-columns, $breakpoint) {
+  @include create-mq($breakpoint) {
+    @for $i from 1 through $grid-columns {
+      &__col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid-columns / $i) ) * 1%;
+      }
+
+      &__col#{$modifier}-offset-#{$i} {
+        margin-left: (100 / ($grid-columns / $i) ) * 1%;
+      }
+    }
+  }
+}
+
+.container {
+  width: 95%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  &--full { width: 100%; }
+  &--narrow { width: 90%; }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    // reverse order
+    &--reverse { flex-direction: row-reverse; }
+
+    // vertical alignment
+    &--align-top { align-items: flex-start; }
+    &--align-middle { align-items: center; }
+    &--align-bottom { align-items: flex-end; }
+
+    // horizontal alignment
+    &--justify-start { justify-content: flex-start; }
+    &--justify-center { justify-content: center; }
+    &--justify-end { justify-content: flex-end; }
+    &--justify-around { justify-content: space-around; }
+    &--justfity-between { justify-content: space-between; }
+
+    // equal heights
+    &--stretch { align-items: stretch; }
+
+  }
+
+  // columns
+
+  @each $modifier, $breakpoint in $map-width-props {
+    @include create-col-classes($modifier, $grid-columns, $breakpoint);
+  }
+
+  
+  &__col {
+    flex: 1 1 0%;
+    width: auto;
+
+    // spacing the boxes
+    &--padded {
+      margin-right: $grid-gutter;
+      margin-left: $grid-gutter;
+
+      &--first, &:first-child { margin-left: 0; }
+      &--last, &:last-child { margin-right: 0; }
+
+    }
+
+    // fit content
+    &--fit-content {
+      flex: none;
+      width: auto;
+    }
+    
+    // first and last order
+    &--flex-first { order: -1; }
+    &--flex-last { order: 9999; }
+
+    // vertical alignment, individual unit
+    &--align-top { align-self: flex-start; }
+    &--align-middle { align-self: center; }
+    &--align-bottom { align-self: flex-end; }
+
+    &--stretch { align-self: stretch; }
+
+  }
+
+}
+

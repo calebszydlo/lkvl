@@ -5,10 +5,9 @@ $grid-unit: 5px;
 
 // Responsive
 
-$md-width:          1028px;
-$sm-width:          767px;
+$sm-width:  400px;
+$md-width:  768px;
+$lg-width:  931px;
+$xl-width:  1029px;
 
-$tablet-width: 			1028px;
-$sub-tablet-width:	930px;
-$mobile-width: 			767px;
-$sub-mobile-width: 	400px;
+$map-width-props: ('-xs': 0, '-sm': $sm-width, '-md': $md-width, '-lg': $lg-width, '-xl': $xl-width);

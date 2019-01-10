@@ -1,20 +1,21 @@
 /* wordpress */
 
 
-.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
+.alignright, .alignleft {
+  float: none;
+  margin: 0 0 1em 0;
+  display: block;
 }
 
-.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-@media(max-width: $mobile-width) {
-  .alignright, .alignleft {
-    float: none;
-    margin: 0 0 1em 0;
-    display: block;
+@include create-mq($sm-width) {
+  .alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  
+  .alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
   }
 }
 
