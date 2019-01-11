@@ -7,10 +7,10 @@
 
 ?>
 
-<div class="u-md-hidden hamburger">
+<div class="u-mdUp-hidden hamburger">
 	<a href="#navigationMobile" class="hamburger__link">
-		<span class="hamburger__bar u-bgColorWhite"></span>
-		<span class="hamburger__bar u-bgColorWhite"></span>
-		<span class="hamburger__text u-textColorWhite u-textUppercase u-textSizeMinus1">Menu</span>
+		<span class="hamburger__bar u-bgColorBlack"></span>
+		<span class="hamburger__bar u-bgColorBlack"></span>
+		<span class="hamburger__text u-textColorBlack u-textUppercase u-textSizeMinus1">Menu</span>
 	</a>
 </div>

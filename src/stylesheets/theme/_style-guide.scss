@@ -1,4 +1,4 @@
-/* global.scss */
+/* _style-guide.scss */
 
 html {
 	height: 100%;
@@ -23,7 +23,7 @@ p {
 }
 
 strong, b {
-	font-weight: bold;
+	font-weight: $font-weight-bold;
 }
 
 em, i {
@@ -32,6 +32,7 @@ em, i {
 
 a {
 	color: $color-secondary;
+	text-decoration: none;
 	&:hover {
 		color: $color-primary;
 	}
@@ -43,10 +44,12 @@ ul {
 }
 
 .inline-list {
-	li {
-		display: inline;
-		margin: 0 10px;
-	}
+
+}
+
+.inline-list__item {
+	display: inline;
+	margin: 0 10px;
 }
 
 img {
@@ -55,24 +58,16 @@ img {
 	height: auto;
 }
 
-.clearfix, .row, .block {
-	&:after {
-		visibility: hidden;
-		display: block;
-		content: '';
-		clear: both;
-		height: 0;
-	}
-}
-
 // headings
 
 h1 {
 	font-family: $font-family-secondary;
+	font-size: 48px;
 }
 
 h2 {
 	font-family: $font-family-secondary;
+	font-size: 32px;
 }
 
 

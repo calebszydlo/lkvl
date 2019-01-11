@@ -44,21 +44,17 @@
  * Sizes
  */
 
-.u-textSizePlus10 { font-size: calc($font-base + ($font-scale-factor * 10)); }
-.u-textSizePlus9 { font-size: calc($font-base + ($font-scale-factor * 9)); }
-.u-textSizePlus8 { font-size: calc($font-base + ($font-scale-factor * 8)); }
-.u-textSizePlus7 { font-size: calc($font-base + ($font-scale-factor * 7)); }
-.u-textSizePlus6 { font-size: calc($font-base + ($font-scale-factor * 6)); }
-.u-textSizePlus5 { font-size: calc($font-base + ($font-scale-factor * 5)); }
-.u-textSizePlus4 { font-size: calc($font-base + ($font-scale-factor * 4)); }
-.u-textSizePlus3 { font-size: calc($font-base + ($font-scale-factor * 3)); }
-.u-textSizePlus2 { font-size: calc($font-base + ($font-scale-factor * 2)); }
-.u-textSizePlus1 { font-size: calc($font-base + $font-scale-factor); }
-.u-textSizeBase { font-size: $font-base; }
-.u-textSizeMinus1 { font-size: calc($font-base - $font-scale-factor); }
-.u-textSizeMinus2 { font-size: calc($font-base - ($font-scale-factor * 2)); }
-.u-textSizeMinus3 { font-size: calc($font-base - ($font-scale-factor * 3)); }
-.u-textSizeZero { font-size: 0; }
+.u- {
+  &textSizeBase { font-size: $font-base; }
+  &textSizeZero { font-size: 0; }
+
+  @for $i from 10 through 1 {
+    &textSizePlus#{$i} { font-size: ($font-base + ($font-scale-factor * $i) ); }
+  }
+  @for $i from 1 through 3 {
+    &textSizeMinus#{$i} { font-size: ($font-base - ($font-scale-factor * $i) ); }
+  }
+}
 
 /**
  * Styles

@@ -9,11 +9,11 @@ $grid-columns: 12;
 @mixin create-col-classes($modifier, $grid-columns, $breakpoint) {
   @include create-mq($breakpoint) {
     @for $i from 1 through $grid-columns {
-      &__col#{$modifier}-#{$i} {
+      &#{$modifier}-#{$i} {
         flex-basis: (100 / ($grid-columns / $i) ) * 1%;
       }
 
-      &__col#{$modifier}-offset-#{$i} {
+      &#{$modifier}-offset-#{$i} {
         margin-left: (100 / ($grid-columns / $i) ) * 1%;
       }
     }
@@ -26,6 +26,7 @@ $grid-columns: 12;
   margin: 0 auto;
 
   &--full { width: 100%; }
+  &--large { max-width: none; }
   &--narrow { width: 90%; }
 
   &__grid {
@@ -54,17 +55,16 @@ $grid-columns: 12;
 
   // columns
 
-  @each $modifier, $breakpoint in $map-width-props {
-    @include create-col-classes($modifier, $grid-columns, $breakpoint);
-  }
-
-  
   &__col {
     flex: 1 1 0%;
     width: auto;
 
+    @each $modifier, $breakpoint in $map-width-props {
+      @include create-col-classes($modifier, $grid-columns, $breakpoint);
+    }
+
     // spacing the boxes
-    &--padded {
+    &--spaced {
       margin-right: $grid-gutter;
       margin-left: $grid-gutter;
 
@@ -78,7 +78,7 @@ $grid-columns: 12;
       flex: none;
       width: auto;
     }
-    
+
     // first and last order
     &--flex-first { order: -1; }
     &--flex-last { order: 9999; }
@@ -93,4 +93,3 @@ $grid-columns: 12;
   }
 
 }
-

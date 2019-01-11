@@ -5,9 +5,8 @@
 ?>
 
 <footer class="panel u-bgColorBlack">
-  <div class="container-lg">
-    <div class="grid">
-      <div class="unit-sm-4">
+  <div class="container container__grid">
+      <div class="container__col container__col-xs-4">
 
         <h4 class="u-textColorWhite">Quick links:</h4>
         <?php
@@ -26,7 +25,7 @@
         ?>
 
       </div>
-      <div class="unit-sm-4">
+      <div class="container__col container__col-xs-4">
 
         <h4 class="u-textColorWhite">Follow us:</h4>
         <ul class="inline-list">
@@ -35,7 +34,7 @@
         </ul>
 
       </div>
-      <div class="unit-sm-4">
+      <div class="container__col container__col-xs-4">
 
         <h4 class="u-textColorWhite">Stay informed:</h4>
         <p class="u-textColorWhite">Stay up to date by signing up for our emails</p>
@@ -45,8 +44,8 @@
 
       </div>
 
-      <div class="unit-sm-12">
-        <p class="u-textColorWhite u-textSizeMinus1 u-textAlignCenter u-margin0">&copy; copyright <?php echo date('Y');?>, Lakeville Ultimate Disc Association</p>
+      <div class="container__col container__col-xs-12 u-paddingVert2gu">
+        <p class="u-textColorWhite u-textSizeMinus1 u-textAlignCenter u-margin0gu">&copy; copyright <?php echo date('Y');?>, Lakeville Ultimate Disc Association</p>
       </div>
     </div><!--.grid-->
   </div><!--.container-lg-->

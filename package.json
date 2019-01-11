@@ -19,7 +19,6 @@
   "dependencies": {
     "bourbon": "^5.1.0",
     "bourbon-neat": "^3.0.0",
-    "gridzilla": "^1.0.5",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",

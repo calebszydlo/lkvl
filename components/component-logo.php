@@ -9,6 +9,6 @@
 
  ?>
 
- <a class="logo" href="<?php bloginfo('url'); ?>">
+ <a class="logo u-xsUp-block u-paddingVert2gu" href="<?php bloginfo('url'); ?>">
    <img src="<?php echo $logo_svg['url']; ?>" onerror="this.onerror=null;this.src='<?php echo $logo['url']; ?>'" alt="<?php echo $logo['alt']; ?>" />
  </a>

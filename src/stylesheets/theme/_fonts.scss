@@ -1,12 +1,12 @@
 /* fonts.scss */
 
 // vars
-$font-weight-bold:    700;
+$font-weight-bold:    600;
 $font-weight-normal:  400;
-$font-weight-light:   200;
+$font-weight-light:   300;
 
-$font-stack-primary: 'Open-sans', Arial, sans-serif;
-$font-stack-secondary: 'Lost-angeles', 'Open-sans', Arial, sans-serif;
+$font-stack-primary: 'Montserrat', Arial, sans-serif;
+$font-stack-secondary: 'Lost-angeles', 'Montserrat', Arial, sans-serif;
 $font-stack-tertiary: $font-stack-primary;
 
 // font family declarations
@@ -18,60 +18,84 @@ $font-base: 16px;
 $font-scale-factor: 3px;
 
 // open sans
-@font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-regular-webfont.woff') format('woff');
-  font-weight: $font-weight-normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+//   font-weight: $font-weight-normal;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-italic-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-italic-webfont.woff') format('woff');
+//   font-weight: $font-weight-normal;
+//   font-style: italic;
+// }
+//
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-semibold-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-semibold-webfont.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-semibolditalic-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-semibolditalic-webfont.woff') format('woff');
+//   font-weight: 500;
+//   font-style: italic;
+// }
+//
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-extrabold-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-extrabold-webfont.woff') format('woff');
+//   font-weight: $font-weight-bold;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Open-sans';
+//   src: url('../../lib/fonts/open-sans/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+//        url('../../lib/fonts/open-sans/opensans-extrabolditalic-webfont.woff') format('woff');
+//   font-weight: $font-weight-bold;
+//   font-style: italic;
+// }
 
 @font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-italic-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-italic-webfont.woff') format('woff');
-  font-weight: $font-weight-normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-semibold-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-semibold-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-semibolditalic-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-semibolditalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-extrabold-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-extrabold-webfont.woff') format('woff');
+  font-family: 'Montserrat';
+  src: url('../../lib/fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../../lib/fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
   font-weight: $font-weight-bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open-sans';
-  src: url('../../lib/fonts/open-sans/opensans-extrabolditalic-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/open-sans/opensans-extrabolditalic-webfont.woff') format('woff');
-  font-weight: $font-weight-bold;
-  font-style: italic;
+  font-family: 'Montserrat';
+  src: url('../../lib/fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+       url('../../lib/fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../lib/fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+       url('../../lib/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+  font-weight: $font-weight-normal;
+  font-style: normal;
 }
 
 // Lost Angeles
 
 @font-face {
   font-family: 'Lost-angeles';
-  src: url('lostangeles-italic-webfont.woff2') format('woff2'),
-       url('lostangeles-italic-webfont.woff') format('woff');
+  src: url('../../lib/fonts/lost-angeles/angeles-italic-webfont.woff2') format('woff2'),
+       url('../../lib/fonts/lost-angeles/angeles-italic-webfont.woff') format('woff');
   font-weight: $font-weight-normal;
   font-style: normal;
 }

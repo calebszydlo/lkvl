@@ -60,30 +60,28 @@ $nav_primary =
 			'container'				=> false,
 			'echo'						=> '0',
 			'depth'						=> 1,
-			'menu_class'			=> 'nav__list nav__list--global'
+			'menu_class'			=> 'nav__list nav__list--global inline-list'
 		)
 	);
 
 $nav_mobile_menu = $nav_primary;
 ?>
 
-<header role='banner' class='panel u-bgColorBlack'>
-	<div class="container-xl">
-		<div class="grid align-middle-xs nowrap-xs">
-			<div class="unit-xs-1-2 fit-content-xs">
-				<?php get_template_part( 'components/component', 'logo'); ?>
-			</div><!--.unit-sm-3-->
-			<div class="unit-xs-1-2">
-				<?php include( locate_template( 'components/component-nav_primary.php', false, false ) ); ?>
-				<?php get_template_part( 'components/component', 'hamburger'); ?>
-			</div><!--.unit-sm-9-->
-		</div><!--.grid-->
-	</div><!--.container-lg-->
+<header role="banner" class="panel u-bgColorWhite">
+	<div class="container container--large container__grid container__grid--justify-between container__grid--align-middle">
+		<div class="container__col container__col--fit-content container__col--spaced">
+			<?php get_template_part( 'components/component', 'logo'); ?>
+		</div><!--.unit-sm-3-->
+		<div class="container__col container__col--spaced">
+			<?php include( locate_template( 'components/component-nav_primary.php', false, false ) ); ?>
+			<?php get_template_part( 'components/component', 'hamburger'); ?>
+		</div><!--.unit-sm-9-->
+	</div><!--.container-->
 </header><!--.panel-->
 
 
 <?php
 	// mobile navigation
-	$nav_mobile_container_classes = ' u-bgColorWhite';
+	$nav_mobile_container_classes = ' u-bgColorWhite u-mdUp-hidden';
 	include( locate_template( 'components/component-nav_mobile.php', false, false ) );
 ?>

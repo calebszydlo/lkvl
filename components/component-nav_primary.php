@@ -9,6 +9,6 @@
 
 ?>
 
-<nav role="navigation" class="primary-nav u-sm-hidden">
+<nav role="navigation" class="primary-nav u-xsUp-hidden u-mdUp-block u-textAlignRight">
   <?php $nav_primary ? print $nav_primary : print 'Please define what menu to display using the variable $nav_primary in the header.php file' ; ?>
 </nav>
