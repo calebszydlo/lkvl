@@ -4,7 +4,7 @@
  */
 ?>
 
-<footer class="panel u-bgColorBlack">
+<footer class="panel u-bgColorBlack u-paddingTop10gu">
   <div class="container container__grid">
       <div class="container__col container__col-xs-4">
 
@@ -29,8 +29,8 @@
 
         <h4 class="u-textColorWhite">Follow us:</h4>
         <ul class="inline-list">
-          <li><a href="https://twitter.com/LKVL_Ultimate" class="white"><i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://www.instagram.com/lkvl_ultimate/" class="white"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li class="inline-list__item"><a href="https://twitter.com/LKVL_Ultimate" class="u-textColorWhite u-textSizePlus1"><i class="fa fa-twitter"></i></a></li>
+          <li class="inline-list__item"><a href="https://www.instagram.com/lkvl_ultimate/" class="u-textColorWhite u-textSizePlus1"><i class="fa fa-instagram"></i></a></li>
         </ul>
 
       </div>
