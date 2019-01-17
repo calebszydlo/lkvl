@@ -1,0 +1,75 @@
+/* _button.scss */
+
+button {
+  background: $color-black;
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-primary;
+  font-size: ($font-base - $font-scale-factor);
+  letter-spacing: 0.01em;
+  line-height: 1em;
+  overflow: hidden;
+  padding: (2 * $grid-unit) (6 * $grid-unit);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  &:hover:not(:disabled), &:focus:not(:disabled) {
+    animation: colorchange 10s infinite;
+    outline: none;
+  }
+  &:active {
+    box-shadow: none;
+    transform: scale(0.9);
+  }
+}
+
+.button--primary {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.button--secondary {
+  background: $color-white;
+  color: $color-primary;
+  &:hover:not(:disabled), &:focus:not(:disabled) {
+    color: $color-white;
+  }
+}
+
+.button--tertiary {
+  background: transparent;
+  border: 1px solid $color-primary;
+  box-shadow: none;
+  color: $color-primary;
+  &:hover:not(:disabled), &:focus:not(:disabled) {
+    animation: none;
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+.button:disabled {
+  background-color: $color-secondary-tint;
+  box-shadow: none;
+  color: $color-white;
+  cursor: not-allowed;
+}
+
+@keyframes colorchange {
+  0%      {background: $theme-red;}
+  14%     {background: $theme-orange;}
+  29%     {background: $theme-yellow;}
+  43%     {background: $theme-green;}
+  58%     {background: $theme-blue;}
+  72%     {background: $theme-indigo;}
+  86%     {background: $theme-purple;}
+  100%    {background: $theme-red;}
+}

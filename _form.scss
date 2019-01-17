@@ -1,0 +1,162 @@
+/* _form.scss */
+
+// vars
+
+$form-passive:     $color-secondary;
+$form-active:      $color-secondary-shade;
+$form-highlight:   $color-primary;
+$form-border:      $color-secondary-tint;
+
+// reset
+input, select, textarea {
+  appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+// global
+
+.form__field {
+  position: relative;
+  margin-bottom: (6 * $grid-unit);
+}
+
+.form__list {
+  li {
+    margin: 0;
+    &::before {
+      content: '';
+    }
+  }
+}
+
+input {
+  
+}
+
+label {
+  cursor: pointer;
+}
+
+.form__field__label {
+  text-transform: uppercase;
+  font-weight: $font-weight-light;
+  letter-spacing: 0.01em;
+  transition: 0.2s ease all;
+}
+
+// inputs - text based
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+textarea,
+select {
+  font-size: $font-base;
+  padding: (2 * $grid-unit);
+  display: block;
+  width: calc(100% - ( 4 * #{$grid-unit} + 2px ) );
+  border: 1px solid $form-border;
+  &:focus, &:valid {
+    border-color: $form-active;
+  }
+}
+
+.form__field__label--text {
+  position: absolute;
+  padding: 0 $grid-unit;
+  background: $color-white;
+  left: $grid-unit;
+  top: 12px;
+  input:focus ~ &,
+  input:valid ~ & {
+    top: -6px;
+    color: $form-active;
+    font-size: ($font-base - $font-scale-factor);
+  }
+}
+
+textarea ~ .form__field__label--text--static, select ~ .form__field__label--text--static {
+  top: -6px;
+  font-size: ($font-base - $font-scale-factor);
+}
+
+// inputs - radio and checkbox
+
+input[type=radio], input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  + label {
+    position: relative;
+    padding-left: (5 * $grid-unit);
+    margin-bottom: $grid-unit;
+    margin-left: $grid-unit;
+    transition: 0.2s ease all;
+
+    &:hover {
+      padding-left: (7 * $grid-unit);
+    }
+
+    &::before {
+      background: transparent;
+      border: 1px solid $form-border;
+      content: '';
+      display: block;
+      height: ($font-base - $font-scale-factor);
+      left: 0;
+      position: absolute;
+      top: $font-scale-factor;
+      transition: 0.2s ease all;
+      width: ($font-base - $font-scale-factor);
+    }
+  }
+
+  &:checked + label {
+    color: $form-highlight;
+    padding-left: (7 * $grid-unit);
+    &::before {
+      background: $form-highlight;
+      border-color: $form-highlight;
+      box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    }
+  }
+}
+
+input[type=radio] + label::before {
+  border-radius: 50%;
+}
+
+input[type=checkbox] + label::before {
+  border-radius: 4px;
+}
+
+// dropdowns
+select {
+  border-radius: 0;
+  background: $color-white;
+  color: $form-passive;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $form-active;
+    color: $form-active;
+  }
+  option {
+    background-color: $color-white;
+    color: $form-active;
+    padding: (2 * $grid-unit);
+    border-top: 2px solid $form-active;
+    &:hover {
+      color: $form-highlight;
+    }
+  }
+}
+
+
+

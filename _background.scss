@@ -1,0 +1,50 @@
+/**
+ * _background.scss
+ * Background Utilities
+ */
+
+/**
+* Background Colors
+*/
+
+/* Standard Colors */
+
+.u-bgColorWhite { background-color: $color-white; }
+.u-bgColorBlack { background-color: $color-black; }
+.u-bgColorPrimaryShade { background-color: $color-primary-shade; }
+.u-bgColorPrimary { background-color: $color-primary; }
+.u-bgColorPrimaryTint { background-color: $color-primary-tint; }
+.u-bgColorSecondaryShade { background-color: $color-secondary-shade; }
+.u-bgColorSecondary { background-color: $color-secondary; }
+.u-bgColorSecondaryTint { background-color: $color-secondary-tint; }
+.u-bgColorTertiary { background-color: $color-tertiary; }
+
+/* Splits */
+.u-bgColorSplitPrimaryWhite { background: linear-gradient( to right, $color-primary 50%, $color-white 50% ); }
+.u-bgColorSplitWhitePrimary { background: linear-gradient( to right, $color-white 50%, $color-primary 50% ); }
+.u-bgColorSplitPrimaryBlack { background: linear-gradient( to right, $color-primary 50%, $color-black 50% ); }
+.u-bgColorSplitBlackPrimary { background: linear-gradient( to right, $color-black 50%, $color-primary 50% ); }
+
+.u-bgColorSplitPrimarySecondary { background: linear-gradient( to right, $color-primary 50%, $color-secondary 50% ); }
+.u-bgColorSplitSecondaryPrimary { background: linear-gradient( to right, $color-secondary 50%, $color-primary 50% ); }
+
+.u-bgColorSplitSecondaryWhite { background: linear-gradient( to right, $color-secondary 50%, $color-white 50% ); }
+.u-bgColorSplitWhiteSecondary { background: linear-gradient( to right, $color-white 50%, $color-secondary 50% ); }
+.u-bgColorSplitSecondaryBlack { background: linear-gradient( to right, $color-secondary 50%, $color-black 50% ); }
+.u-bgColorSplitBlackSecondary { background: linear-gradient( to right, $color-black 50%, $color-secondary 50% ); }
+
+/**
+ * Background Positioning
+ */
+
+.u-bgFixed { background-attachment: fixed; }
+
+/**
+ * Background Size
+ */
+
+.u-bgSize50 { background-size: 50%; }
+.u-bgSize75 { background-size: 75%; }
+.u-bgSizeFull { background-size: 100%; }
+.u-bgSizeCover { background-size: cover; }
+.u-bgSizeContain { background-size: contain; }

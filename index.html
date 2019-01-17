@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<html class="ie-modern">
+<![endif]-->
+<!--[if !IE]><!-->
+<html class="not-ie">
+<!--<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<title>style guide</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no">
+
+<!--stylesheet-->
+<link href="https://fonts.googleapis.com/css?family=Bangers|Montserrat" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+<script src="dist/js/compiled.js"></script>
+
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<body>
+<div id="container">
+
+<header role="banner" class="panel u-bgColorWhite">
+	<div class="container container--large container__grid container__grid--justify-between container__grid--align-middle">
+		<div class="container__col container__col--fit-content container__col--spaced">
+      <a class="logo u-xsUp-block u-paddingVert2gu" href="/">
+        <img src="local-img/logo.svg" onerror="this.onerror=null;this.src='local-img/logo.png'" />
+      </a>
+		</div><!--.unit-sm-3-->
+		<div class="container__col container__col--spaced">
+			<div class="hamburger">
+        <a href="#navigationMobile" class="hamburger__link">
+          <span class="hamburger__bar u-bgColorBlack"></span>
+          <span class="hamburger__bar u-bgColorBlack"></span>
+          <span class="hamburger__text u-textColorBlack u-textUppercase u-textSizeMinus1">Menu</span>
+        </a>
+      </div>
+		</div><!--.unit-sm-9-->
+	</div><!--.container-->
+</header><!--.panel-->
+
+<section class="panel u-paddingVert10gu">
+  <div class="container container__grid">
+    <div class="container__col">
+      <h1>Sandbox Page</h1>
+    </div>
+  </div>
+</section>
+
+<section class="panel u-bgColorSplit u-bgColorSplitPrimaryWhite">
+	<div class="container container__grid">
+
+		<div class="container__col container__col-xs-4 u-bgColorPrimary u-textColorWhite">
+      <div class="u-padding4gu">
+        <h2 class="u-textColorWhite">Content Block</h2>
+        <p>Here's some text</p>
+        <button class="button button--primary u-marginRight4gu u-marginBottom4gu">Primary Button</button>
+        <button class="button button--secondary u-marginBottom4gu">Secondary Button</button>
+        <button class="button button--tertiary">Tertiary Button</button>
+      </div>
+		</div><!--.container__col-->
+	
+    <div class="container__col container__col-xs-8 u-bgColorWhite">
+      <div class="u-padding4gu">
+        <form>
+          
+          <h2>Sample Form</h2> 
+          <div class="form__field">
+            <input id="input1" name="name" type="text" value="" required="true" />
+            <label class="form__field__label form__field__label--text" for="input1">Name</label> 
+          </div>
+          
+          <div class="form__field">
+            <label class="form__field__label">Radio Buttons</label>
+            <ul class="form__list u-marginTop2gu">
+              <li>
+                <input checked="checked" name="demoradio" type="radio" value="a" id="radio1" />
+                <label for="radio1">Radio 1</label>
+              </li>
+
+              <li>
+                <input name="demoradio" type="radio" value="b" id="radio2" />
+                <label for="radio2">Radio 2</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__field">
+            <label class="form__field__label">Radio Buttons</label>
+            <ul class="form__list u-marginTop2gu">
+              <li>
+                <input name="democheckbox" type="checkbox" value="1" id="checkbox1" />
+                <label for="checkbox1">Checkbox 1</label>
+              </li>
+
+              <li>
+                <input name="democheckbox" type="checkbox" value="2" id="checkbox2" />
+                <label for="checkbox2">Checkbox 2</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__field">
+            <textarea cols="30" rows="2" id="textarea"></textarea>
+            <label class="form__field__label form__field__label--text form__field__label--text--static" for="textarea">Textarea</label>
+          </div>
+          
+          <div class="form__field">
+            <select name="select">
+              <option selected="selected" value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+            <label for="select" class="form__field__label form__field__label--text  form__field__label--text--static">Dropdown</label>
+          </div>
+          
+          <div class="form__field">
+            <button class="button" type="submit" value="Submit">Submit</button>
+            <button class="button" type="submit" value="Disabled" disabled="true">Disabled</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="panel u-bgColorBlack u-paddingTop10gu">
+  <div class="container container__grid">
+      <div class="container__col container__col-xs-4">
+
+        <h4 class="u-textColorWhite">Quick links:</h4>
+
+      </div>
+      <div class="container__col container__col-xs-4">
+
+        <h4 class="u-textColorWhite">Follow us:</h4>
+        <ul class="inline-list">
+          <li class="inline-list__item"><a href="https://twitter.com/LKVL_Ultimate" class="u-textColorWhite u-textSizePlus1"><i class="fa fa-twitter"></i></a></li>
+          <li class="inline-list__item"><a href="https://www.instagram.com/lkvl_ultimate/" class="u-textColorWhite u-textSizePlus1"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+
+      </div>
+      <div class="container__col container__col-xs-4">
+
+        <h4 class="u-textColorWhite">Stay informed:</h4>
+        <p class="u-textColorWhite">Stay up to date by signing up for our emails</p>
+        <p class="button">
+          <a href="/" class="button--link button--link--red">Contact us!</a>
+        </p>
+
+      </div>
+
+      <div class="container__col container__col-xs-12 u-paddingVert2gu">
+        <p class="u-textColorWhite u-textSizeMinus1 u-textAlignCenter u-margin0gu">&copy; copyright 2019, Lakeville Ultimate Disc Association</p>
+      </div>
+    </div><!--.grid-->
+  </div><!--.container-lg-->
+</footer><!--.panel-->
+
+
+</div><!--#container-->
+</body>
+</html>
