@@ -6,7 +6,7 @@ $font-weight-normal:  400;
 $font-weight-light:   300;
 
 $font-stack-primary: 'Montserrat', Arial, sans-serif;
-$font-stack-secondary: 'Lost-angeles', 'Montserrat', Arial, sans-serif;
+$font-stack-secondary: 'Bangers', 'Montserrat', Arial, sans-serif;
 $font-stack-tertiary: $font-stack-primary;
 
 // font family declarations
@@ -94,8 +94,8 @@ $font-scale-factor: 3px;
 
 @font-face {
   font-family: 'Lost-angeles';
-  src: url('../../lib/fonts/lost-angeles/angeles-italic-webfont.woff2') format('woff2'),
-       url('../../lib/fonts/lost-angeles/angeles-italic-webfont.woff') format('woff');
+  src: url('../../lib/fonts/lost-angeles/lostangeles-italic-webfont.woff2') format('woff2'),
+       url('../../lib/fonts/lost-angeles/lostangeles-italic-webfont.woff') format('woff');
   font-weight: $font-weight-normal;
   font-style: normal;
 }

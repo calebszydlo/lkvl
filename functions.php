@@ -29,6 +29,9 @@ function my_add_theme_scripts() {
   // add flexslider
   // wp_enqueue_script('flexslider-js', get_template_directory_uri() .'/lib/flexslider/jquery.flexslider-min.js', false, '2.6.0');
 
+  // add fonts
+  wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Bangers|Montserrat' );
+
   // compiled styles
   wp_enqueue_style( 'style', get_template_directory_uri().'/dist/css/style.css' );
 

@@ -14,9 +14,10 @@
 .u-textColorPrimaryShade { color: $color-primary-shade; }
 .u-textColorPrimary { color: $color-primary; }
 .u-textColorPrimaryTint { color: $color-primary-tint; }
+.u-textColorSecondaryShade { color: $color-secondary-shade; }
 .u-textColorSecondary { color: $color-secondary; }
-.u-textColorNeutral { color: $color-neutral; }
-.u-textColorNeutralTint { color: $color-neutral-tint; }
+.u-textColorSecondaryTint { color: $color-secondary-tint; }
+.u-textColorTertiary { color: $color-tertiary; }
 
 /**
  * Kerning

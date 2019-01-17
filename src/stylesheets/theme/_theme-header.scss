@@ -19,7 +19,7 @@
     line-height: 1em;
     padding: 23px 10px 24px;
     &:hover {
-      background: $color-neutral-tint;
+      background: tint($color-secondary, 80%);
     }
   }
 }
@@ -30,7 +30,7 @@
     li {
       display: block;
       padding: ($grid-unit * 4);
-      border-bottom: 1px solid $color-neutral-tint;
+      border-bottom: 1px solid $color-secondary-tint;
       &:last-child {
         border: 0;
       }
@@ -39,7 +39,7 @@
       padding: 0;
       &:hover {
         background: none;
-        color: $color-secondary;
+        color: $color-primary;
       }
     }
   }
